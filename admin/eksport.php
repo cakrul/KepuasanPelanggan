@@ -103,6 +103,8 @@ while($jmlhrecod = mysqli_fetch_assoc($sql1)){
     <th>Dokter</th>
     <th>Perawat</th>
     <th>Gizi</th>
+    <th>Poli Ibu</th>
+    <th>Poli Anak</th>
     <th>Saran Kritik</th>
   </tr>
 </thead>
@@ -136,6 +138,8 @@ while($data = mysqli_fetch_assoc($sql)){
   <td>'.$data['dokter'].'</td>
   <td>'.$data['perawat'].'</td>
   <td>'.$data['gizi'].'</td>
+  <td>'.$data['poli_ibu'].'</td>
+  <td>'.$data['poli_anak'].'</td>
   <td>'.$data['saran_kritik'].'</td>
   </tr>
   </tbody>

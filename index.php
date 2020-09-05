@@ -212,6 +212,20 @@
                             </div>
                         </div>
                     </div>
+                    <div class="row">                           
+                        <div class="col">
+                            <div class="custom-control custom-checkbox mr-sm-2">
+                                <input type="checkbox" class="custom-control-input" id="poli_ibu" name="poli_ibu">
+                                <label class="custom-control-label unit" for="poli_ibu">Poli Ibu</label>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="custom-control custom-checkbox mr-sm-2">
+                                <input type="checkbox" class="custom-control-input" id="poli_anak" name="poli_anak">
+                                <label class="custom-control-label unit" for="poli_anak">Poli Anak</label>
+                            </div>
+                        </div>
+                    </div>
                     <br>
                     <div class="form-group">
                         <textarea type="text" name="saran_kritik" class="form-control" rows="3" placeholder="Masukan Saran dan Kritik Anda...."></textarea>
@@ -263,11 +277,13 @@
       $bangsal_alengka     = chkcmb($_POST['bangsal_alengka']);
       $bangsal_amarta      = chkcmb($_POST['bangsal_amarta']);
       $gizi                = chkcmb($_POST['gizi']);
+      $poli_ibu                = chkcmb($_POST['poli_ibu']);
+      $poli_anak                = chkcmb($_POST['poli_anak']);
       $saran_kritik        = comment($_POST['saran_kritik']);
 
-      $query = "INSERT INTO survey (no_p,tgl,ivf,kby,poli_gigi,poli_umum,igd,ok,hcu,vk,tppri,laborat,rm,reps,farmasi,bangsal_astina,bangsal_ayodya,bangsal_alengka,bangsal_amarta,dokter,perawat,gizi,saran_kritik) 
+      $query = "INSERT INTO survey (no_p,tgl,ivf,kby,poli_gigi,poli_umum,igd,ok,hcu,vk,tppri,laborat,rm,reps,farmasi,bangsal_astina,bangsal_ayodya,bangsal_alengka,bangsal_amarta,dokter,perawat,gizi,poli_ibu,poli_anak,saran_kritik) 
 
-      VALUES ('', '$tgl','$ivf','$kby','$poli_gigi','$poli_umum','$igd','$ok','$hcu','$vk','$tppri','$lab','$rm','$reps','$farmasi','$bangsal_astina','$bangsal_ayodya','$bangsal_alengka','$bangsal_amarta','$dokter','$perawat','$gizi','$saran_kritik')";
+      VALUES ('', '$tgl','$ivf','$kby','$poli_gigi','$poli_umum','$igd','$ok','$hcu','$vk','$tppri','$lab','$rm','$reps','$farmasi','$bangsal_astina','$bangsal_ayodya','$bangsal_alengka','$bangsal_amarta','$dokter','$perawat','$gizi','$poli_ibu','$poli_anak','$saran_kritik')";
 
 
       if(mysqli_query($conn, $query)){

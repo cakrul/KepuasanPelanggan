@@ -2,7 +2,7 @@
 <!DOCTYPE html>  
  <html>  
       <head>  
-           <title>Webslesson Tutorial | Ajax PHP MySQL Date Range Search using jQuery DatePicker</title>  
+           <title>Rekap Data Survey Kepuasan Pelanggan</title>  
            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>  
            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />  
            <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>  
@@ -60,6 +60,8 @@
 		                    <th>Dokter</th>
 		                    <th>Perawat</th>
 		                    <th>Gizi</th>
+		                    <th>Poli Ibu</th>
+		                    <th>Poli Anak</th>
 		                    <th>Saran Kritik</th>
 		                </tr>
                      </thead>
@@ -95,6 +97,8 @@
                         <td>'.$data['dokter'].'</td>
                         <td>'.$data['perawat'].'</td>
                         <td>'.$data['gizi'].'</td>
+                        <td>'.$data['poli_ibu'].'</td>
+                        <td>'.$data['poli_anak'].'</td>
                         <td>'.$data['saran_kritik'].'</td>
                     </tr>
                     </tbody>
@@ -133,7 +137,7 @@
                 }  
                 else  
                 {  
-                     alert("Please Select Date");  
+                     alert("Tolong Masukan Tanggal");  
                 }  
            });
       });  
